@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://c1c2epky2rxq5"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_2axhc"]
+[ext_resource type="Texture2D" uid="uid://dg3siv2ghwtee" path="res://icon.svg" id="1_72fai"]
+[ext_resource type="Texture2D" uid="uid://daiesbry0wvno" path="res://mikuC.png" id="2_g5xcr"]
+
+[sub_resource type="Animation" id="Animation_ku1g2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6ymob"]
+resource_name = "new_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.2, 0.333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(100, 0, 0, 1), Color(100, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cifee"]
+_data = {
+"RESET": SubResource("Animation_ku1g2"),
+"new_animation": SubResource("Animation_6ymob")
+}
+
+[node name="enemy" type="CharacterBody2D"]
+script = ExtResource("1_2axhc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+self_modulate = Color(0, 0, 0, 1)
+rotation = 1.52367
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_72fai")
+
+[node name="focus" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-33, 0)
+scale = Vector2(0.11, 0.11)
+texture = ExtResource("2_g5xcr")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -12.0
+offset_top = -27.0
+offset_right = 88.0
+scale = Vector2(0.25, 0.25)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_cifee")
+}

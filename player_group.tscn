@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://x0r0v05d5d27"]
+
+[ext_resource type="Script" path="res://player_group.gd" id="1_aatgw"]
+[ext_resource type="PackedScene" uid="uid://c1c2epky2rxq5" path="res://enemy.tscn" id="2_x74h0"]
+
+[node name="playerGroup" type="Node2D"]
+script = ExtResource("1_aatgw")
+
+[node name="enemy" parent="." instance=ExtResource("2_x74h0")]
+self_modulate = Color(0, 0, 100, 1)
+
+[node name="enemy2" parent="." instance=ExtResource("2_x74h0")]
+
+[node name="enemy3" parent="." instance=ExtResource("2_x74h0")]
+
+[node name="enemy4" parent="." instance=ExtResource("2_x74h0")]
+
+[editable path="enemy"]
+[editable path="enemy2"]
+[editable path="enemy3"]
+[editable path="enemy4"]

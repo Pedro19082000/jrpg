@@ -1,0 +1,6 @@
+res://battle_scene.tscn
+res://turn_queue.tscn
+res://enemy.tscn
+res://enemy_group.tscn
+res://player_group.tscn
+res://enemy_group.gd

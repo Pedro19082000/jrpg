@@ -1,0 +1,9 @@
+Button
+VBoxContainer
+CanvasLayer
+Camera2D
+TextureRect
+AnimationPlayer
+ProgressBar
+Sprite2D
+CharacterBody2D

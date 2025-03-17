@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1742217685
+battle_scene.tscn::PackedScene::-1::1742216708::0::1::::<><>::
+enemy.gd::GDScript::-1::1738778827::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::-1::1742216708::0::1::::<><>::
+enemy_group.gd::GDScript::-1::1742216705::0::1::::<>Node2D<>::
+enemy_group.tscn::PackedScene::-1::1742216708::0::1::::<><>::
+icon.svg::CompressedTexture2D::7639306027225132664::1738711151::1742217689::1::::<><>::
+image.webp::CompressedTexture2D::5797210103526970402::1738763280::1742217689::1::::<><>::
+mikuC.png::CompressedTexture2D::7176052165282908572::1738760377::1742217689::1::::<><>::
+player_group.gd::GDScript::-1::1738780302::0::1::::<>Node2D<>::
+player_group.tscn::PackedScene::-1::1742216708::0::1::::<><>::
+turn_queue.gd::GDScript::-1::1741786339::0::1::::TurnQueue<>Node2D<>::
+turn_queue.tscn::PackedScene::-1::1742216708::0::1::::<><>::
+::res://jrpg/::1742217685

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3sqcl83ok6r4"]
+
+[ext_resource type="Script" path="res://enemy_group.gd" id="1_kfsmv"]
+[ext_resource type="PackedScene" uid="uid://c1c2epky2rxq5" path="res://enemy.tscn" id="2_38lu6"]
+
+[node name="enemyGroup" type="Node2D"]
+script = ExtResource("1_kfsmv")
+
+[node name="enemy" parent="." instance=ExtResource("2_38lu6")]
+
+[node name="enemy2" parent="." instance=ExtResource("2_38lu6")]
+
+[node name="enemy3" parent="." instance=ExtResource("2_38lu6")]
+
+[node name="enemy4" parent="." instance=ExtResource("2_38lu6")]
