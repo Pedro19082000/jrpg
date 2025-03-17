@@ -27,6 +27,8 @@ func _process(delta):
 		if Input.is_action_just_pressed("ui_accept"):
 			action_queue.push_back(index)
 			emit_signal("next_player")
+			_start_choosing()
+			show_choice()
 			print("sua vez")
 	if action_queue.size() == enemies.size() and not is_battling:
 		is_battling = true
